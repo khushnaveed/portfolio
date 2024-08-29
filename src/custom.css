@@ -1,0 +1,59 @@
+.animate-drop-above {
+    animation: dropDown 2s ease-out forwards;
+}
+
+.animate-drop-right{
+    animation: dropRight 2s ease-out forwards;
+}
+
+.animate-drop-left{
+    animation: dropLeft 2s ease-out forwards;
+}
+
+.animate-drop-down{
+    animation: dropUp 2s ease-out forwards;
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dropRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dropLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dropUp {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

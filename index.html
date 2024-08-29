@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/custom.css">
     <script src="https://kit.fontawesome.com/95be6da05a.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> 
+
 </head>
 
 <body style="background-image: linear-gradient(to right, #005a54 , #04406b);">
@@ -54,14 +56,13 @@
 
     <!-- Introduction -->
     <div id="intro" class="mx-auto p-7" style="margin-top: 5rem; color: #ffecd1;">
-        <div class="flex justify-center items-center flex-wrap" style="height: 800px;" >
+        <div class="flex justify-center items-center flex-wrap" >
             <div class="text-center" style="width: 1218px;">
-                <p class="text-gray-900 text-6xl p-5" style="color: #001524;">Hello!</p>
-                <p class="md:text-2xl p-2">I am <span style="text-shadow: 1px 1px 3px #ffffff80;">Khush Bakht Naveed</span>.</p>
-                <p class="md:text-3xl p-1" style="text-shadow: 1px 1px 3px #ffffff80;">Web Developer Engineer</p>
-                <p class="md:text-2xl p-1"> Based in <span style="text-shadow: 1px 1px 3px #ffffff80;">Berlin, Germany</span> <i class="fa-solid fa-location-dot"></i></p>
+                <p class="text-gray-900 text-6xl md:p-5 animate-drop-above" style="color: #00f7ff; text-shadow: 1px 1px 3px #ffffff80;">Hello, World! <i class="fa-solid fa-globe fa-xl p-4" style="color: #ffffff;"></i></p>
+                <p class="md:text-2xl p-2 animate-drop-right">I am <span style="text-shadow: 1px 1px 3px #ffffff80;">Khush Bakht Naveed</span>.</p>
+                <p class="md:text-3xl p-1 animate-drop-left" style="text-shadow: 1px 1px 3px #ffffff80;">Web Developer Engineer</p>
+                <p class="md:text-2xl p-1 animate-drop-down"> Based in <span style="text-shadow: 1px 1px 3px #ffffff80;">Berlin, Germany</span> <i class="fa-solid fa-location-dot"></i></p>
             </div>
-            <!-- <img class="rounded-full" src="./images/profile.png" alt="profile photo" style="width: 30rem"> -->
         </div>
     </div>
 
@@ -73,7 +74,7 @@
         <div class="md:p-7 text-justify w-8/12" style="color: #ffecd1;">
             <p class="md:text-xl leading-normal">I am a passionate and growth-oriented Software Engineer with a strong expertise in building pixel-perfect, responsive websites using a variety of frameworks. <br> <br>
             Currently, I am pursuing an intensive Web Development course focused on the MERN stack (MongoDB, Express.js, React, Node.js), where I am actively developing full-stack applications. <br> <br>
-            My skills are particularly strong in front-end technologies, including HTML, CSS, Bootstrap, and Tailwind CSS. <br>
+            My skills are particularly strong in front-end technologies, including HTML, CSS, Bootstrap, and Tailwind CSS. <br><br>
             In addition to my development experience, I have a background in Software Quality Assurance, which has honed my keen eye for detail, allowing me to thoroughly test and catch bugs effectively. <br> <br>
             This combination of development and QA experience equips me with a comprehensive understanding of the software lifecycle, enabling me to deliver high-quality, reliable applications.</p>
         </div>
@@ -306,7 +307,7 @@
         <!-- project cards -->
         <div class="container flex items-center justify-center flex-wrap">
             <!-- Bennysburger -->
-            <div class="max-w-sm border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4" style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/bennysburger.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium">Benny's Burger</h5>
@@ -316,7 +317,7 @@
             </div>
 
             <!-- Blogpage -->
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4" style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/blogpage.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium">My Blog</h5>
@@ -326,7 +327,7 @@
             </div>
 
             <!-- Customersatisfactiontable -->
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4" style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/Customersatisfactiontable.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium">Satisfaction Dashboard</h5>
@@ -336,7 +337,7 @@
             </div>
 
             <!-- Donutshop -->
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4" style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/donutshop.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium">Donut Shop</h5>
@@ -346,7 +347,7 @@
             </div>
 
             <!-- Speakershop -->
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4" style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/speakershop.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium" >Speaker Shop</h5>
@@ -356,7 +357,7 @@
             </div>
 
             <!-- Sweetspot -->
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4 " style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4 " style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/sweetspot.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium">Sweet Spot</h5>
@@ -366,7 +367,7 @@
             </div>
 
             <!-- Transparentform -->
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4" style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/transparentform.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium ">Transparent Login Page</h5>
@@ -376,7 +377,7 @@
             </div>
             
             <!-- Zoompage -->
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+            <div class="max-w-sm rounded-lg m-4" style="background-color: #0b6978;">
                 <img class="rounded-t-lg" src="./images/project/zoompage.png" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-medium">Zoom Session</h5>
