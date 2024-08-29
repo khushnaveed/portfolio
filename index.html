@@ -6,20 +6,21 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/output.css">
     <script src="https://kit.fontawesome.com/95be6da05a.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> 
 </head>
-<body>
 
+<body style="background-image: linear-gradient(to right, #005a54 , #04406b);">
+    
     <!-- Navigation bar -->
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav class="fixed w-full z-20 top-0 start-0 bg-transparent backdrop-blur-xl" style="color: #ffecd1;">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="./images/logo.jpg" class="h-8" alt="Flowbite Logo">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Khush Bakht Naveed</span>
+                <img src="./images/logo.jpg" class="h-12" alt="Flowbite Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap" style="text-shadow: 2px 2px 4px #ffffff80;">Khush Bakht Naveed</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Resume <i class="fa-solid fa-download"></i></button>
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <button type="button" class="bg-blue-700 hover:bg-blue-800 focus:ring-4 font-medium rounded-lg text-sm px-4 py-2 text-center">Resume <i class="fa-solid fa-download"></i></button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -27,127 +28,472 @@
                 </button>
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <a href="#about" class="block py-2 px-3 border-b-2 border-transparent md:hover:border-white">About</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Background</a>
+                        <a href="#background" class="block py-2 px-3 border-b-2 border-transparent md:hover:border-white">Background</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Experience</a>
+                        <a href="#experience" class="block py-2 px-3 border-b-2 border-transparent md:hover:border-white">Experience</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                        <a href="#skills" class="block py-2 px-3 border-b-2 border-transparent md:hover:border-white">Skills</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+                        <a href="#projects" class="block py-2 px-3 border-b-2 border-transparent md:hover:border-white">Projects</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        <a href="#contact" class="block py-2 px-3 border-b-2 border-transparent md:hover:border-white">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-     
 
-    <!-- main section in between -->
-    <div style="margin-top: 100px;">
-        <p>Hello! I am Khush Bakht Naveed.</p>
-        <p>My goal is to build a strong foundation in modern web development practices, with a focus on creating responsive, user-centric websites and applications. I aim to continuously enhance my skills in the latest technologies and methodologies, ensuring that the solutions I develop are both innovative and aligned with the best practices in the industry.</p>
-    </div>
-    
-    <div>
-        <h2>About</h2>
-    </div>
-
-    <div>
-        <h2>Background</h2>
+    <!-- Introduction -->
+    <div id="intro" class="mx-auto p-7" style="margin-top: 5rem; color: #ffecd1;">
+        <div class="flex justify-center items-center flex-wrap" style="height: 800px;" >
+            <div class="text-center" style="width: 1218px;">
+                <p class="text-gray-900 text-6xl p-5" style="color: #001524;">Hello!</p>
+                <p class="md:text-2xl p-2">I am <span style="text-shadow: 1px 1px 3px #ffffff80;">Khush Bakht Naveed</span>.</p>
+                <p class="md:text-3xl p-1" style="text-shadow: 1px 1px 3px #ffffff80;">Web Developer Engineer</p>
+                <p class="md:text-2xl p-1"> Based in <span style="text-shadow: 1px 1px 3px #ffffff80;">Berlin, Germany</span> <i class="fa-solid fa-location-dot"></i></p>
+            </div>
+            <!-- <img class="rounded-full" src="./images/profile.png" alt="profile photo" style="width: 30rem"> -->
+        </div>
     </div>
 
-    <div>
-        <h2>Experience</h2>
+    <!-- About -->
+    <div id="about" class="flex flex-col justify-center items-center mx-auto md:container">
+        <div class="text-center p-5">
+            <h2 class="text-5xl" style="color: #ffecd1;">About</h2>
+        </div>
+        <div class="md:p-7 text-justify w-8/12" style="color: #ffecd1;">
+            <p class="md:text-xl leading-normal">I am a passionate and growth-oriented Software Engineer with a strong expertise in building pixel-perfect, responsive websites using a variety of frameworks. <br> <br>
+            Currently, I am pursuing an intensive Web Development course focused on the MERN stack (MongoDB, Express.js, React, Node.js), where I am actively developing full-stack applications. <br> <br>
+            My skills are particularly strong in front-end technologies, including HTML, CSS, Bootstrap, and Tailwind CSS. <br>
+            In addition to my development experience, I have a background in Software Quality Assurance, which has honed my keen eye for detail, allowing me to thoroughly test and catch bugs effectively. <br> <br>
+            This combination of development and QA experience equips me with a comprehensive understanding of the software lifecycle, enabling me to deliver high-quality, reliable applications.</p>
+        </div>
     </div>
 
-    <div class="text-center">
-        <h2>Skills</h2>
-        <ul class="flex flex-wrap items-center justify-center">
-            <li>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-                    <h3>HTML</h3>
-                    <img src="./images/html-5.png" alt="html logo" style="width: 80px;">
+    <!-- Background -->
+    <div id="background" class="mx-auto md:flex md:items-center md:justify-center md:w-8/12 md:container" style="color: #ffecd1;">
+        <h2 class="text-5xl p-5 text-center md:w-6/12">Background</h2>
+        <!-- Columns -->
+        <div class="container px-4 py-8 md:w-6/12">
+            <div class="grid grid-cols-1 gap-8">
+                <div>
+                    <div class="relative m-8">
+                        <!-- Timeline Item 1 -->
+                        <div class="flex items-start mb-8">
+                            <div class="relative z-10"><i class="fa-solid fa-circle" style="color: #06ba84;"></i></div>
+                            <div class="ml-8">
+                                <h3 class="text-xl font-bold" style="color: #2dcee6;">DCI Digital Career Institute</h3>
+                                <p class="text-lg font-medium">Enrolled in a Full Stack Web Development Course</p>
+                                <p class="text-lg font-medium">May 2024 - Jul 2025</p>
+                                <p class="text-lg font-medium">Berlin, Germany · Remote</p>
+                                <li class="text-lg">Completing a one-year full-time training, mastering MERN stack technologies (MongoDB, Express.js, React, Node.js)</li>
+                                <li class="text-lg">Enhancing language skills by learning German.</li>
+                            </div>
+                        </div>
+                        <!-- Timeline Item 2 -->
+                        <div class="flex items-start mb-8">
+                            <div class="relative z-10"><i class="fa-solid fa-circle" style="color: #06ba84;"></i></div>
+                            <div class="ml-8">
+                                <h3 class="text-xl font-bold" style="color: #2dcee6;">Information Technology University</h3>
+                                <p class="text-lg font-medium">Bachelor Degree in Computer Science (BSCS)</p>
+                                <p class="text-lg font-medium">2015 - 2019</p>
+                           <!--      <button type="button" class="text-white bg-gradient-to-r from-green-500 to-orange-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Computer Fundamentals and Programming</button>
+                                <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Data Structures and Algorithms</button>
+                                <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Operating Systems</button>
+                                <button type="button" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Computer Archietecture and Organization</button>
+                                <button type="button" class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Object Oriented Programming</button>
+                                <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Database Systems</button>
+                                <button type="button" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Software Engineering</button>
+                                <button type="button" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Software Testing</button> -->
+                            </div>
+                        </div>
+                        <!-- Vertical line -->
+                        <div class="absolute top-0 left-2 w-px h-full bg-slate-200"></div>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-                    <h3>CSS</h3>
-                    <img src="./images/css-3.png" alt="css logo" style="width: 80px;">
-                </div>
-            </li>
-            <li>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-                    <h3>Bootstrap</h3>
-                    <img src="./images/bootstrap.png" alt="bootstrap logo" style="width: 60px;">
-                </div>
-            </li>
-            <li>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-                    <h3>Tailwind</h3>
-                    <img src="./images/tailwind.png" alt="tailwind logo" style="width: 80px;">
-                </div>
-            </li>
-            <li>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-                    <h3>Git</h3>
-                    <img src="./images/git.png" alt="git logo" style="width: 80px;">
-                </div>
-            </li>
-            <li>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-                    <h3>Sass</h3>
-                    <img src="./images/sass.png" alt="sass logo" style="width: 80px;">
-                </div>
-            </li>
-            <li>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-                    <h3>Jira</h3>
-                    <img src="./images/jira.png" alt="jira logo" style="width: 65px;">
-                </div>
-            </li>
-        </ul>
+            </div>
+        </div>
         
     </div>
 
-    <div>
-        <h2>Projects</h2>
-
+    <!-- Experience -->
+    <div id="experience" class="md:mx-auto md:flex container md:items-center md:justify-center md:w-8/12" style="color: #ffecd1;">
+        <!-- Column -->
+        <div class="container px-4 py-8 md:w-6/12">
+            <div class="grid grid-cols-1 gap-8">
+                <div>
+                    <div class="relative">
+                        <!-- Timeline Item 1 -->
+                        <div class="flex items-start mb-8">
+                            <div class="relative z-10"><i class="fa-solid fa-circle" style="color: #06ba84;"></i></div>
+                            <div class="ml-8">
+                                <h3 class="text-xl font-bold" style="color: #2dcee6;">Web Developer Tutor</h3>
+                                <p class="text-lg font-medium">DCI Digital Career Institute · Part-time</p>
+                                <p class="text-lg font-medium">Aug 2024 - Present · 1 mo</p>
+                                <p class="text-lg font-medium">Berlin, Germany · Remote</p>
+                                <li class="text-lg">Guiding Web Development students by troubleshooting technical challenges.</li>
+                                <li class="text-lg">Deepening their understanding of course material.</li>
+                                <li class="text-lg">Offering comprehensive recaps of their assignments.</li>
+                            </div>
+                        </div>
+                        <!-- Timeline Item 2 -->
+                        <div class="flex items-start mb-8">
+                            <div class="relative z-10"><i class="fa-solid fa-circle" style="color: #06ba84;"></i></div>
+                            <div class="ml-8">
+                                <h3 class="text-xl font-bold" style="color: #2dcee6;">Software Quality Assurance Engineer</h3>
+                                <p class="text-lg font-medium">Anaconda, Inc. · Fulltime</p>
+                                <p class="text-lg font-medium">Sep 2019 - Jun 2023 · 3 yrs 10 mos</p>
+                                <p class="text-lg font-medium">Remote</p>
+                                <li class="text-lg">Improved installation processes and reduced potential glitches by conducting comprehensive testing.</li>
+                                <li class="text-lg">Revamped and optimized test cases, Conducted thorough API testing, managed and administered Kubernetes clusters.</li>
+                                <li class="text-lg">Tracked and reported bugs with precision. Executed test cycles in a timely manner, adhering to project timelines.</li>
+                                <li class="text-lg">Provided training to junior team members, fostering a collaborative learning environment.</li>
+                                <li class="text-lg">Effectively managed and assigned tasks to team members, orchestrating a cohesive workflow throughout the entire release process.</li>
+                            </div>
+                        </div>
+                        <!-- Vertical line -->
+                        <div class="absolute top-0 left-2 w-px h-full bg-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-5xl p-5 text-center md:w-6/12">Professional Experience</h2>
 
     </div>
 
+    <!-- skills -->
+    <div id="skills" class="mx-auto text-center m-3 flex-col justify-center items-center" style="color: #ffecd1;">
 
+        <h2 class="text-5xl p-5">Skills</h2>
 
-  
+        <div class="flex flex-col flex-wrap items-center justify-center container m-3">
+            
+            <!-- Frontend skills -->
+            <div class="flex flex-row flex-wrap">
+                <h3 class="text-2xl m-8" style="color: #2dcee6;">Frontend <i class="fa-solid fa-arrow-right-long fa-lg"></i></h3>
+                <ul class="flex flex-wrap items-center justify-center">
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>JavaScript</h3> -->
+                            <img src="./images/skills/javascript.png" alt="javascript logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>HTML</h3> -->
+                            <img src="./images/skills/html-5.png" alt="html logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>CSS</h3> -->
+                            <img src="./images/skills/css-3.png" alt="css logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Bootstrap</h3> -->
+                            <img src="./images/skills/bootstrap.png" alt="bootstrap logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                        <!--  <h3>Tailwind</h3> -->
+                            <img src="./images/skills/tailwind.png" alt="tailwind logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Sass</h3> -->
+                            <img src="./images/skills/sass.png" alt="sass logo" style="width: 50px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
+            <!-- Testing Frameworks -->
+            <div class="flex flex-row flex-wrap">
+                <h3 class="text-2xl m-8" style="color: #2dcee6;">Testing Frameworks <i class="fa-solid fa-arrow-right-long fa-lg"></i></h3>
+                <ul class="flex flex-wrap items-center justify-center">
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Cypress</h3> -->
+                            <img src="./images/skills/cypress.jpeg" alt="javascript logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Playwright</h3> -->
+                            <img src="./images/skills/playwright.png" alt="html logo" style="width: 50px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
+            <!-- Api skills -->
+            <div class="flex flex-row flex-wrap">
+                <h3 class="text-2xl m-8" style="color: #2dcee6;">API Tools <i class="fa-solid fa-arrow-right-long fa-lg"></i></h3>
+                <ul class="flex flex-wrap items-center justify-center">
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Swagger</h3> -->
+                            <img src="./images/skills/swagge.png" alt="javascript logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Postman</h3> -->
+                            <img src="./images/skills/postman-icon.png" alt="html logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Insomnia</h3> -->
+                            <img src="./images/skills/insomnia.png" alt="html logo" style="width: 50px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
+            <!-- Others -->
+            <div class="flex flex-row flex-wrap">
+                <h3 class="text-2xl m-8" style="color: #2dcee6;">Others <i class="fa-solid fa-arrow-right-long fa-lg"></i></h3>
+                <ul class="flex flex-wrap items-center justify-center">
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full shadow flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>Git</h3> -->
+                            <img src="./images/skills/git.png" alt="git logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full shadow  flex flex-col items-center" style="background-color: #0b6978;">
+                        <!--  <h3>Kubernetes</h3> -->
+                            <img src="./images/skills/kubernetes-icon-.png" alt="jira logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-2000 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                            <!-- <h3>code</h3> -->
+                            <img src="./images/skills/vscode.png" alt="sass logo" style="width: 50px;">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="max-w-sm m-3 p-6 border border-gray-200 rounded-full flex flex-col items-center" style="background-color: #0b6978;">
+                        <!--  <h3>Jira</h3> -->
+                            <img src="./images/skills/jira.png" alt="jira logo" style="width: 50px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-
-
-    <div>
-        <h2>Contact</h2>
+        </div>
+        
     </div>
 
+    <!-- Projects -->
+    <div id="projects" class="mx-auto text-center container" style="color: #ffecd1;">
 
-    
+        <h2 class="text-5xl m-5 p-5">Projects</h2>
+        <!-- project cards -->
+        <div class="container flex items-center justify-center flex-wrap">
+            <!-- Bennysburger -->
+            <div class="max-w-sm border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/bennysburger.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium">Benny's Burger</h5>
+                    <a href="https://github.com/khushnaveed/restaurant-dummy-page-using-bootstrap" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="https://bennysburger.netlify.app/" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
 
+            <!-- Blogpage -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/blogpage.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium">My Blog</h5>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
 
+            <!-- Customersatisfactiontable -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/Customersatisfactiontable.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium">Satisfaction Dashboard</h5>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
 
+            <!-- Donutshop -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/donutshop.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium">Donut Shop</h5>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
 
+            <!-- Speakershop -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/speakershop.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium" >Speaker Shop</h5>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
+
+            <!-- Sweetspot -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4 " style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/sweetspot.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium">Sweet Spot</h5>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
+
+            <!-- Transparentform -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/transparentform.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium ">Transparent Login Page</h5>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
+            
+            <!-- Zoompage -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg m-4" style="background-color: #0b6978;">
+                <img class="rounded-t-lg" src="./images/project/zoompage.png" alt="" />
+                <div class="p-5">
+                    <h5 class="mb-2 text-2xl font-medium">Zoom Session</h5>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Source Code<i class="fa-solid fa-code" style="margin-left: 5px;"></i></a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Live Version<i class="fa-solid fa-up-right-from-square" style="margin-left: 5px;"></i><a>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Carousel -->
+        <div id="default-carousel" class="relative p-7 m-7 mx-auto text-center" data-carousel="slide" style="width: 70%;">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 m-7 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 (Visible by default) -->
+                <div class="duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/bennysburger.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%;">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/blogpage.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%;">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/Customersatisfactiontable.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%;">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/donutshop.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%;">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/speakershop.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%;">
+                </div>
+                <!-- Item 6 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/sweetspot.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%;">
+                </div>
+                <!-- Item 7 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/transparentform.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%;">
+                </div>
+                <!-- Item 8 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/project/zoompage.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." style="width: 70%; height: fit-content;">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+                <button type="button" class=" w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+    </div>
+ 
+    <!-- Contact -->
+    <div id="contact" class="mx-auto text-center m-3 container" style="color: #ffecd1;">
+        <h2 class="text-4xl p-5">Contact</h2>
+        <ul class="flex flex-wrap items-center justify-center">
+            <li>
+                <div class="max-w-sm p-6 flex flex-col items-center">
+                    <a class=" bg-white border rounded-full p-6" href="mailto:khushbakht541@gmail.com">
+                        <img src="./images/contact/gmail.png" alt="html logo" style="width: 40px;">
+                    </a>
+                    <h3 class="text-lg p-4">Write me an Email</h3>
+                </div>
+            </li>
+            <li>
+                <div class="max-w-sm p-6 flex flex-col items-center">
+                    <a class=" bg-white border rounded-full p-6" href="https://github.com/khushnaveed" target="_blank">
+                        <img src="./images/contact/github.png" alt="html logo" style="width: 40px;">
+                    </a>
+                    <h3 class="text-lg p-4">Follow on Github</h3>
+                </div>
+            </li>
+            <li>
+                <div class="max-w-sm p-6 flex flex-col items-center">
+                     <a class=" bg-white border rounded-full p-6" href="https://www.linkedin.com/in/khush-bakht-nav/">
+                        <img src="./images/contact/linkedin.png" alt="html logo" style="width: 40px;">
+                    </a>
+                    <h3 class="text-lg p-4">Connect on LinkedIn</h3>
+                </div>
+            </li>
+    </div>
+
+    <!-- Scroll up -->
+    <a href="#intro" class="fixed bottom-10 right-10 p-3 rounded-full bg-blue-500 text-white hover:bg-blue-700 transition duration-300">
+        <i class="fa-solid fa-angles-up fa-xl"></i>
+    </a>
 
     <!-- Footer -->
-    <footer class="fixed bottom-0 left-0 z-20 w-full p-4 border-t shadow text-center dark:bg-gray-800 dark:border-gray-600 ">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Khush Bakht Naveed</a>. All Rights Reserved.</span>
+    <footer class="bottom-0 left-0 z-20 w-full p-4  shadow text-center" style="background-color: #001524; color: #ffecd1">
+        <span class="text-sm text-center">© 2024 <a href="#" class="hover:underline">Khush Bakht Naveed</a>. All Rights Reserved.</span>
     </footer>
 
 </body>
