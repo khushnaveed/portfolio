@@ -1,13 +1,15 @@
 import { Disclosure } from "@headlessui/react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navigation = [
   { name: "About", href: "#", current: false },
-  { name: "Experiences", href: "#", current: false },
-  { name: "Education", href: "#", current: false },
+  { name: "Experiences", href: "#experiences", current: false },
+  { name: "Education", href: "#education", current: false },
   { name: "Projects", href: "#", current: false },
   { name: "Skills", href: "#", current: false },
+  { name: "Certifications", href: "#", current: false },
+
 ];
 
 function classNames(...classes) {
@@ -52,7 +54,7 @@ const menuItemVariants = {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="backdrop-blur bg-opacity fixed w-full top-0 z-50 border-b border-white/10">
+    <Disclosure as="nav" className="backdrop-blur bg-opacity fixed w-full top-0 z-50 border-b border-white/10 shadow-lg shadow-white/10">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -83,7 +85,7 @@ export default function Navbar() {
                         className={classNames(
                           item.current
                             ? "bg-white/20 text-white"
-                            : "text-gray-300 hover:bg-white/10 hover:text-white",
+                            : "text-gray-300 hover:bg-white/10 hover:text-white ml-5",
                           "rounded-md px-4 py-2 text-lg  transition-all duration-200"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -94,6 +96,17 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+
+              {/* Download Button */}
+              <motion.a
+                href="/[Web-Dev]KhushBakhtNaveed.pdf" 
+                download
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="hidden sm:flex items-center bg-white/10 text-white px-4 py-2 rounded-md hover:bg-white/20 transition-all"
+              >
+                <Download className="h-5 w-5 mr-2" /> Download Resume
+              </motion.a>
             </div>
           </div>
 
@@ -122,6 +135,16 @@ export default function Navbar() {
                     </Disclosure.Button>
                   </motion.div>
                 ))}
+                {/* Mobile Download Button */}
+                <motion.a
+                  href="/[Web-Dev]KhushBakhtNaveed.pdf"
+                  download
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="block text-center bg-white/10 text-white px-4 py-2 rounded-md hover:bg-white/20 transition-all"
+                >
+                  <Download className="h-5 w-5 inline mr-2" /> Download Resume
+                </motion.a>
               </div>
             </Disclosure.Panel>
           </motion.div>

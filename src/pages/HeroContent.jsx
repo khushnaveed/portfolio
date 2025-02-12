@@ -16,7 +16,7 @@ function HeroContent() {
               <img
                 src={profileImg}
                 alt="Profile"
-                className="absolute inset-2 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-500 border-2 border-white/50 shadow-2xl shadow-white/10"
+                className="absolute inset-2 rounded-full object-cover transition-all duration-500 border-2 border-white/50 shadow-2xl shadow-white/10"
               />
             </div>
           </div>
@@ -31,7 +31,7 @@ function HeroContent() {
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
                 </span>
               </h2>
-              <h3 className="text-2xl md:text-3xl text-gray-400 font-light tracking-wider">
+              <h3 className="text-2xl md:text-3xl text-gray-400 font-light p-2 tracking-wider shadow-lg shadow-white/10">
                 Full Stack Developer | Frontend Developer | QA
               </h3>
             </div>
@@ -83,6 +83,7 @@ function HeroContent() {
         <div className="absolute bottom left-1/2 transform -translate-x-1/2 animate-bounce mt-20 hidden md:block">
           <ChevronDown className="w-6 h-6 text-gray-400" />
         </div>
+        
       </div>
     </div>
   );
