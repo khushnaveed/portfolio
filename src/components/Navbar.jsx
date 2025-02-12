@@ -52,7 +52,7 @@ const menuItemVariants = {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-black fixed w-full top-0 z-50 border-b border-white/10">
+    <Disclosure as="nav" className="backdrop-blur bg-opacity fixed w-full top-0 z-50 border-b border-white/10">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -84,7 +84,7 @@ export default function Navbar() {
                           item.current
                             ? "bg-white/20 text-white"
                             : "text-gray-300 hover:bg-white/10 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium transition-all duration-200"
+                          "rounded-md px-4 py-2 text-lg  transition-all duration-200"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -114,7 +114,7 @@ export default function Navbar() {
                         item.current
                           ? "bg-white/20 text-white"
                           : "text-gray-300 hover:bg-white/10 hover:text-white",
-                        "block rounded-md px-3 py-2 text-base font-medium"
+                        "block rounded-md px-3 py-2 text-base"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
