@@ -1,5 +1,5 @@
-import React from 'react';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import React from "react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,12 +13,15 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Contact</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:contact@example.com" className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2">
+                <a
+                  href="mailto:khushbakht541@gmail.com"
+                  className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
+                >
                   <Mail className="w-4 h-4" />
                   khushbakht541@gmail.com
                 </a>
               </li>
-                {/* <li>
+              {/* <li>
                   <a href="tel:+1234567890" className="text-gray-400 hover:text-white transition-colors duration-200">
                     +1 (234) 567-890
                   </a>
@@ -31,13 +34,28 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">About</a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Projects</a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">Blog</a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  Blog
+                </a>
               </li>
             </ul>
           </div>
@@ -46,23 +64,35 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Connect</h3>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a
+                href="https://github.com/khushnaveed"
+                target="_blank"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a
+                href="https://www.linkedin.com/in/khush-bakht-nav/"
+                target="_blank"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
                 <Mail className="w-6 h-6" />
               </a>
             </div>
           </div>
         </div>
-       
+
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-white/10">
           <p className="text-center text-gray-400 flex items-center justify-center gap-1">
-            Khush Bakht Naveed Web Devlopement Portfolio created with Vite React © {currentYear}
+            Khush Bakht Naveed Web Devlopement Portfolio created with Vite React
+            © {currentYear}
           </p>
         </div>
       </div>

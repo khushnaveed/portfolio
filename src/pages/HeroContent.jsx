@@ -4,8 +4,8 @@ import profileImg from "../assets/Profile_Picture.jpeg";
 
 function HeroContent() {
   return (
-    <div className="min-h-screen bg-[#0e1425] text-white pt-16">
-    <div className="container mx-auto px-4 py-16 relative">
+    <div className="min-h-screen bg-[#0e1425] text-white flex items-center justify-center">
+    <div className="container mx-auto px-4 py-16 relative ">
       <div className="flex flex-col md:flex-row items-center gap-12">
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center animate-fade-in-left">
@@ -61,7 +61,7 @@ function HeroContent() {
                         <Github className="w-7 h-7 text-gray-400 group-hover:text-white transition-colors duration-300" />
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/khush-bakht-nav/"
+                        href="https://github.com/khushnaveed"
                         target="_blank"
                         className="group"
                       >
@@ -75,7 +75,7 @@ function HeroContent() {
                 </div>
         
                 {/* Scroll Indicator */}
-                <div className="absolute bottom left-1/2 transform -translate-x-1/2 animate-bounce mt-14">
+                <div className="absolute bottom left-1/2 transform -translate-x-1/2 animate-bounce mt-20 hidden md:block">
                   <ChevronDown className="w-6 h-6 text-gray-400" />
                 </div>
     </div>
