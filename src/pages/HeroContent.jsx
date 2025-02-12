@@ -6,7 +6,7 @@ function HeroContent() {
   return (
     <div className="min-h-screen bg-[#0e1425] text-white flex items-center justify-center">
     <div className="container mx-auto px-4 py-16 relative ">
-      <div className="flex flex-col md:flex-row items-center gap-12">
+      <div className="flex flex-col md:flex-row items-center gap-12 mt-8">
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center animate-fade-in-left">
           <div className="relative w-64 h-64 md:w-96 md:h-96 group">
