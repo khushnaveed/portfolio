@@ -52,7 +52,7 @@ const menuItemVariants = {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="fixed w-full top-0 z-50 border-b border-white/10">
+    <Disclosure as="nav" className="bg-black fixed w-full top-0 z-50 border-b border-white/10">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
