@@ -5,7 +5,7 @@ import profileImg from "../assets/Profile_Picture.jpeg";
 /* bg-[#0e1425] */
 function HeroContent() {
   return (
-    <div className="min-h-screen  text-white flex items-center justify-center">
+    <div className="min-h-screen  text-white flex items-center justify-center" id="about">
       <div className="container mx-auto px-4 py-16 relative mt-15">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Image Section */}
