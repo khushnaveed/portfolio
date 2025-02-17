@@ -6,9 +6,9 @@ const navigation = [
   { name: "About", href: "#", current: false },
   { name: "Experiences", href: "#experiences", current: false },
   { name: "Education", href: "#education", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Skills", href: "#", current: false },
-  { name: "Certifications", href: "#", current: false },
+  { name: "Projects", href: "#projects", current: false },
+  { name: "Skills", href: "#skills", current: false },
+  { name: "Certifications", href: "#certifications", current: false },
 
 ];
 

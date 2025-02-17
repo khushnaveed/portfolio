@@ -58,7 +58,7 @@ export default function Experiences() {
   };
 
   return (
-    <section className="bg-[#0e1425] text-white py-20" id="experiences">
+    <section className=" text-white py-20" id="experiences">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ export default function Experiences() {
               {/* Timeline line */}
               {index !== experiences.length - 1 && (
                 <motion.div 
-                  className="absolute left-8 top-16 bottom-0 w-0.5 bg-white/10"
+                  className="absolute left-8 top-16 bottom-0 w-0.5 bg-white/10 hidden md:block"
                   initial={{ height: 0 }}
                   whileInView={{ height: "100%" }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -95,18 +95,18 @@ export default function Experiences() {
               <div className="flex gap-8">
                 {/* Timeline dot */}
                 <motion.div 
-                  className="relative z-10"
+                  className="relative z-10 hidden md:block"
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center border border-white/10 hover:border-white/30 transition-colors duration-300">
+                  <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center border border-white/10 hover:border-white/30 transition-colors duration-300 bg-gradient-to-bl from-black via-[#0e1425] to-black">
                     <Briefcase className="w-8 h-8 text-gray-400" />
                   </div>
                 </motion.div>
 
                 {/* Content */}
                 <motion.div 
-                  className="flex-1 bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                  className="flex-1 bg-[#0e1425] rounded-lg p-6 hover:bg-white/10 transition-all duration-300 cursor-pointer"
                   whileHover={{ scale: 1.02 }}
                   onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
                 >
@@ -150,7 +150,7 @@ export default function Experiences() {
                         animate="visible"
                         exit="hidden"
                         variants={achievementsVariants}
-                        className="mt-4 overflow-hidden"
+                        className="mt-4 overflow-hidden "
                       >
                         <div className="space-y-2 pl-4 border-l-2 border-white/10">
                           {exp.achievements.map((achievement, achievementIndex) => (

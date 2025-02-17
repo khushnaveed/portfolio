@@ -14,7 +14,11 @@ const education = [
       "CSS",
       "Bootstrap",
       "Tailwind",
-      "Git and Github",
+      "Git",
+      "Github",
+      "VScode",
+      "Scrum",
+      
     ],
   },
   {
@@ -70,7 +74,7 @@ export default function Education() {
   };
 
   return (
-    <section className="bg-[#0e1425] text-white py-20" id="education">
+    <section className=" text-white py-20" id="education">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -8,15 +8,15 @@ import HeroContent from "./pages/HeroContent";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <HeroContent />
-      <Experiences />
-      <Education />
-      {/* <Projects />
-      <Skills /> */}
-      <Footer />
-    </>
+      <div className="bg-[#0e1425]">
+        <Navbar />
+        <HeroContent />
+        <Experiences />
+        <Education />
+        <Projects />
+        <Skills />
+        <Footer />
+      </div>
   );
 }
 
