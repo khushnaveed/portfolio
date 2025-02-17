@@ -5,6 +5,7 @@ import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import HeroContent from "./pages/HeroContent";
+import Certification from "./pages/Certification";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Education />
         <Projects />
         <Skills />
+        <Certification />
         <Footer />
       </div>
   );

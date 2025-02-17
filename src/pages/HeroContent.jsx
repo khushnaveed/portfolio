@@ -10,7 +10,7 @@ function HeroContent() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Image Section */}
           <div className="w-full md:w-1/2 flex justify-center animate-fade-in-left">
-            <div className="relative w-64 h-64 md:w-96 md:h-96 group">
+            <div className="relative w-32 h-32 md:w-96 md:h-96 group">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/10 to-white/20 group-hover:scale-105 transition-transform duration-500"></div>
               <div className="absolute -inset-4 rounded-full border border-white/10 animate-spin-slow"></div>
               <div className="absolute -inset-8 rounded-full border border-white/5 animate-reverse-spin"></div>
