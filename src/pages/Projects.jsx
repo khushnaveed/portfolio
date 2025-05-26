@@ -10,6 +10,15 @@ import {
 
 const projects = [
   {
+    title: "Royal Grand Luxury Hotel",
+    description:
+      "Aa responsive booking platform for hotel rooms, events, and dining, designed to offer seamless user experience for guests and admins alike. Built with React, Node.js, Express, Tailwind CSS, and MVC architecture.",
+    image: "/royalgrandhotel.png",
+    technologies: ["Nodejs", "Express Server", "React", "JavaScript", "Tailwind"],
+    liveDemo: "https://hotel-booking-mern-stack-e0jk.onrender.com/",
+    github: "https://github.com/khushnaveed/Hotel-Booking-mern-stack",
+  },
+  {
     title: "Multinational Museum",
     description:
       "Group project using react showcasing cultures of 5 diﬀerentcountries of the group member.",
