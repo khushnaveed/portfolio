@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Royal Grand Luxury Hotel",
     description:
-      "Aa responsive booking platform for hotel rooms, events, and dining, designed to offer seamless user experience for guests and admins alike. Built with React, Node.js, Express, Tailwind CSS, and MVC architecture.",
+      "A responsive booking platform for hotel rooms, events, and dining, designed to offer seamless user experience for guests and admins alike. Built with React, Node.js, Express, Tailwind CSS, and MVC architecture.",
     image: "/royalgrandhotel.png",
     technologies: ["Nodejs", "Express Server", "React", "JavaScript", "Tailwind"],
     liveDemo: "https://hotel-booking-mern-stack-e0jk.onrender.com/",
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Multinational Museum",
     description:
-      "Group project using react showcasing cultures of 5 diﬀerentcountries of the group member.",
+      "Group project using react showcasing cultures of 5 diﬀerent countries of the group member.",
     image: "/museumSphere.png",
     technologies: ["React", "JavaScript", "Tailwind"],
     liveDemo: "https://museumsphere.netlify.app/",
